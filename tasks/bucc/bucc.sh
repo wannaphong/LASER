@@ -26,7 +26,7 @@ data="."
 xdir=${data}/downloaded	# tar files as distrubuted by the BUCC evaluation
 ddir=${data}/${bucc}	# raw texts of BUCC
 edir=${data}/embed	# normalized texts and embeddings
-langs=("fr" "de" "ru" "zh")
+langs=("th") # ("fr" "de" "ru" "zh")
 ltrg="en"		# English is always the 2nd language
 
 # encoder
@@ -112,7 +112,7 @@ Mine () {
        --src-embeddings ${bn}.enc.${l1} --trg-embeddings ${bn}.enc.${l2} \
        --unify --mode mine --retrieval max --margin ratio -k 4  \
        --output ${cand} \
-       --verbose --gpu
+       --verbose
   fi
 }
 

@@ -1,0 +1,4 @@
+LASER: tools for BUCC bitext mining
+ - reading sentences and IDs
+ - reading candidates ./embed/bucc2018.th-en.train.candidates.tsv
+ - optimizing threshold on gold alignments ./bucc2018/th-en/th-en.training.gold
